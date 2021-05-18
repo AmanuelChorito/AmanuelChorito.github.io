@@ -15,7 +15,7 @@ a :link {
 
 h1,h2,h3,h4,h5,h6{
 color: #A4A400;
-background-color: #F0F0F0;
+background-color: #F0F0F0 ;
 font-family: Lucida, "Sans Unicode", Helvetica, Arial, sans-serif ;
 }
 
@@ -24,11 +24,12 @@ h1{
     font-size: 22pt ;
     font-weight: bold;
 }
-h2,h3,h4,h5,h6
+h2,h3,h4,h5,h6 
 {
  text-align: left;
     font-size: 18pt ;
     font-weight: normal;
+    display: inline;
 }
 pre{
     font-family: monospace;
