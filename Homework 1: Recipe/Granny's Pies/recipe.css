@@ -23,6 +23,7 @@ h1{
     text-align: center;
     font-size: 22pt ;
     font-weight: bold;
+    text-decoration: underline;
 }
 h2,h3,h4,h5,h6 
 {
@@ -37,4 +38,7 @@ pre{
 }
 ul.one9inch{
    list-style-type:none; 
+}
+ul.pieimg{
+    list-style-image: url('../../images/pie_icon.gif');
 }
