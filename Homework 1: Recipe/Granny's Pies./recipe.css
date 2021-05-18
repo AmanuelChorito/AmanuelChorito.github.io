@@ -1,6 +1,7 @@
 
 body{
-    width: auto;
+    width: 1024px;
+    height: 768px;
     background-color: white;
     color: #404040;
     font-size: 11pt;
@@ -28,4 +29,8 @@ h2,h3,h4,h5,h6
  text-align: left;
     font-size: 18pt ;
     font-weight: normal;
+}
+pre{
+    font-family: monospace;
+    text-align: justify;
 }
