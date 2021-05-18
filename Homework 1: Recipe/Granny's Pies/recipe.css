@@ -43,3 +43,10 @@ ul.one9inch{
 ul.pieimg{
     list-style-image: url('../../images/pie_icon.gif');
 }
+ol{
+ list-style-type: decimal;   
+ font-weight: bold;
+}
+ul.direction{
+
+}
