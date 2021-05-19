@@ -47,3 +47,11 @@ ol{
  list-style-type: decimal;   
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
 }
+.listbold{
+    font-weight: bold;
+    
+}
+.quotes{
+    font-style: italic;
+    background-color: #FFFFA8;
+}
