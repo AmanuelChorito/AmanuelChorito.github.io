@@ -5,6 +5,31 @@ body{
     max-width: 1024px;
     max-height: 768px;
 }
+header{
+    background-image: url(/images/movie/bannerbg.png);
+    background-repeat: repeat-x;
+}
+h1{
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana,sans-serif;
+    text-shadow:3px 3px #999999 ;
+}
+
+aside{ float:right;}
+
 .container{
+    border:2px solid blueviolet;
     border-radius: 12px;
 }
+.rating{
+   max-width: 800px; 
+   border: 4px solid gray;
+   border-radius: 20px;
+}
+Below the main heading is the page's overall content area, with an overall 33% rating for the film, several critics'
+reviews, and an overview of the film at right. Taken together this content occupies 800px in width and is centered
+horizontally within the page. If the page resizes horizontally, this 800px section should move dynamically so that it
+remains centered horizontally on the page. This overall section has a 4px gray solid border with a 20px round radius
+and should be sized large enough to contain all of its contents. (Hint: See textbook section 4.3 on making contents fit.)
