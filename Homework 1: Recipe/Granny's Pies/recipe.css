@@ -37,16 +37,12 @@ pre{
     font-family: monospace;
     text-align: justify;
 }
-ul.one9inch{
+ul{
    list-style-type:none; 
-}
-ul.pieimg{
+
     list-style-image: url('../../images/pie_icon.gif');
-}
+    }
 ol{
  list-style-type: decimal;   
- font-weight: bold;
-}
-ul.direction{
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 }
