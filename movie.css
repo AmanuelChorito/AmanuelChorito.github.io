@@ -41,12 +41,10 @@ blockquote{
         padding: 8px;
         float: left;
 }
-section{
 
-  overflow: hidden;
-}
 article{
     width: 550px;
+    overflow: hidden;
 }
 
 
