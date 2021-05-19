@@ -53,7 +53,7 @@ ol{
     font-weight: bold;
     
 }
-blockquote,figcaption{
+blockquote{
     font-style: italic;
     background-color: #FFFFA8;
 }
