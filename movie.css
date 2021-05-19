@@ -2,4 +2,12 @@ body{
     background-image: url('/images/movie/background.png');
     font-size: 8pt;
     font-family: Verdana, Tahoma, sans-serif;
+    max-width: 1024px;
+    max-height: 768px;
 }
+The top of the page is an image banner. The center of this banner is banner.png. Behind this banner
+bannerbg.png repeats horizontally across the length of the page. Each image is 50px tall. (Hint: To make the banner
+stretch to the edges of the page, use the bannerbg.png as the background image of a block element that is behind banner.png.)
+Underneath the image banner is a centered heading containing the movie name and year in a 24pt bold font. The
+preferred fonts for this heading are Tahoma, Verdana, or any sans-serif font available on the system. The text in the
+header has a "shadow" located 3px right and 3px down from the original text, using the color #999999.
