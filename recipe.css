@@ -60,3 +60,6 @@ blockquote,figcaption{
 .validate{
     float: right;
 }
+.acss{
+    display: inline;
+}
