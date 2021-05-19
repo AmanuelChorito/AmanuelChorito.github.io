@@ -31,7 +31,18 @@ aside{ float:right;}
    background-repeat: repeat-x;
    font:48pt bold red;
 }
-article{
-    float: left;
-    
+blockquote{
+        margin: 2%;
+        width: 47%;
+        font:48pt bold;
+        background-color:#E8DC9B ;
+        border: 2px solid gray;
+        border-radius: 10px;
+        padding: 8px;
 }
+section{
+
+  overflow: hidden;
+}
+
+
