@@ -23,6 +23,7 @@ aside{ float:right;}
     max-width: 800px; 
     border: 4px solid gray;
    border-radius: 20px;
+   margin: auto;
    
 }
 #rating{
