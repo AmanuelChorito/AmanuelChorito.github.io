@@ -17,9 +17,6 @@ h1{
     text-shadow:3px 3px #999999 ;
 }
 
-aside{ float:right;
-width: 250px;}
-
 .container{
     max-width: 800px; 
     border: 4px solid gray;
@@ -63,5 +60,14 @@ img.icon{
 
     
 }
-
-
+aside{ float:right;
+width: 250px;
+background-color: #A2B964;
+padding-left: 10pt;
+font-size: 8pt;
+font-family:  Arial , sans-serif ;
+}
+dt{
+    font-weight: bold;
+    margin-bottom: 10pt;
+}
