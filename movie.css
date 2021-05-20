@@ -54,5 +54,14 @@ aside{ float:right;}
 img.icon{
     float: left;
 }
+img.critic{
+    float: left;
+    margin-right: 5px;
+}
+.reviewer{
+    font-style: italic;
+
+    
+}
 
 
