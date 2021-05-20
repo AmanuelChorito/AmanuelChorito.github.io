@@ -71,3 +71,9 @@ dt{
     font-weight: bold;
     margin-bottom: 10pt;
 }
+footer{
+    text-align: center;
+    background-color: #A2B964;
+    margin: 5px;
+    padding: 5px;
+}
