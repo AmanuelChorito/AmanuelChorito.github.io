@@ -17,7 +17,8 @@ h1{
     text-shadow:3px 3px #999999 ;
 }
 
-aside{ float:right;}
+aside{ float:right;
+width: 250px;}
 
 .container{
     max-width: 800px; 
@@ -46,7 +47,7 @@ aside{ float:right;}
 
 #left{
     width: 550px;
-    overflow: hidden;
+  
 }
 .comment{
     overflow: hidden;
