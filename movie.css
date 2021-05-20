@@ -6,7 +6,7 @@ body{
     max-height: 768px;
 }
 header{
-    background-image: url(/images/movie/bannerbg.png);
+    background-image: url('/images/movie/bannerbg.png');
     background-repeat: repeat-x;
 }
 h1{
@@ -27,7 +27,7 @@ aside{ float:right;}
    max-width: 800px; 
    border: 4px solid gray;
    border-radius: 20px;
-   background-image: url(/images/movie/rbg.png);
+   background-image: url('/images/movie/rbg.png');
    background-repeat: repeat-x;
    font:48pt bold red;
 }
