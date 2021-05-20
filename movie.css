@@ -50,5 +50,8 @@ q{
 .comment{
     overflow: hidden;
 }
+img.icon{
+    float: left;
+}
 
 
