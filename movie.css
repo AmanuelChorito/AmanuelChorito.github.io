@@ -32,7 +32,7 @@ aside{ float:right;}
    background-repeat: repeat-x;
    font:48pt bold red;
 }
-q{
+.qclass{
         margin: 2%;
         width: 47%;
         font:8pt bold;
