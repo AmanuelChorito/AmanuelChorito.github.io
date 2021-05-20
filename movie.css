@@ -4,7 +4,7 @@ body{
     font-family: Verdana, Tahoma, sans-serif;
     max-width: 1024px;
     max-height: 768px;
-}
+     margin: auto;}
 header{
     background-image: url('/images/movie/bannerbg.png');
     background-repeat: repeat-x;
