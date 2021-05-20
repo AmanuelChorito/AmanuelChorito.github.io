@@ -67,9 +67,12 @@ margin-left: 10pt;
 font-size: 8pt;
 font-family:  Arial , sans-serif ;
 }
-dl{
+dt,ul{
     font-weight: bold;
-    margin-bottom: 10pt;
+   
+}
+dd{
+     margin-bottom: 10pt;
 }
 .indicate{
     text-align: center;
