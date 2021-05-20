@@ -29,7 +29,8 @@ h1{
   
    background-image: url('/images/movie/rbg.png');
    background-repeat: repeat-x;
-   font:48pt bold red;
+   font:48pt bold ;
+   color:red;
 }
 .qclass{
         margin: 2%;
