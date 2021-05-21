@@ -6,27 +6,27 @@
 </head>
 
 <body>
-    <h1>Retrieve your grade</h1>
-    <form action="http://mumstudents.org/params.php" method="POST">
+   <img src="/images/form/nerdluv.png">
+    <form action="signup-submit.js" method="POST">
 <fieldset style="width:400px">
     <legend>New User Signup:</legend>
             <div id="controls">
-                <label id="labels">Name:</label><input type="text" name="name">:
+                <label id="labels">Name:</label><input type="text" name="name" size="16">:
             </div>
         <div id="controls">
             
             <label>Gender:</label> 
             <label for="male">Feb</label>
         <input type="radio" id="male" name="Gender" value="Male">
-        <label for="Female">May</label>
+        <label for="Female" checked>May</label>
         <input type="radio" id="Female" name="Gender" value="Female">
       
         </div>
         <div id="controls">
-            <label id="labels">Age:</label><input type="text" name="age">:
+            <label id="labels">Age:</label><input type="text" name="age" size="6" maxlength="2">:
         </div>
         <div id="controls">
-        <label>Personality type:</label><input type="text" name="Personality"> <label id="danger">(Don't know your type?)</label>
+        <label>Personality type:</label><input type="text" name="Personality" size="6" maxlength="4"> <label id="danger">(<a href="o http://www.humanmetrics.com/cgiwin/JTypes2.asp . ">Don't know what to do</a>>)</label>
         </div>
         <div id="controls">
             <label>Favorite OS:</label> <input type="text" name="os">
@@ -37,7 +37,7 @@
             </select>
         </div>
         <div id="controls">
-            <label>Seeking age:</label><input type="text" name="min" placeholder="min"> <label> to </label><input type="text" name="max" placeholder="max">
+            <label>Seeking age:</label><input type="text" name="min" placeholder="min" size="6" maxlength="2"> <label> to </label><input type="text" name="max" placeholder="max" size="6" maxlength="2">
         </div>
         <div id="controls">
             <input type="submit" value="Sign Up">
@@ -46,6 +46,18 @@
         </fieldset>
         
     </form>
+    <footer>
+        <P>
+            This page is for single nerds to meet and date each other! Type in your personal information and wait for the nerdly luv
+            to begin! Thank you for using our site.
+            <hr>
+            Results and page (C) Copyright NerdLuv Inc.
+                <a href="https://amanuelchorito.github.io/index.html">Back to front page</a>
+        </P>
+     <p>
+
+     </p>
+    </footer>
 </body>
 
 </html>
