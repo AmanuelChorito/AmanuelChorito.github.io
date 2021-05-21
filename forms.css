@@ -7,3 +7,15 @@ div>label{
 .controls{
     margin-bottom: 2px;
 }
+fieldset{
+    background-color: gray;
+}
+legend{
+    background-color: honeydew;
+}
+input[type="submit"]{
+    background-color: indianred;
+}
+a{
+   color: red; 
+}
