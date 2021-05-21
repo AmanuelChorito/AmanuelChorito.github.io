@@ -1,0 +1,9 @@
+body{
+    margin: auto;
+}
+div>label{
+    text-align: left;
+}
+.controls{
+    margin-bottom: 2px;
+}
