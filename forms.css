@@ -8,7 +8,7 @@ body{
 fieldset{
     background-color: #cccac6;
     width:400px;
-    margin: auto;
+   
 }
 legend{
     background-color: honeydew;
@@ -28,4 +28,5 @@ label,input{
 }
 form{
     display: table
+     margin: auto;
 }
