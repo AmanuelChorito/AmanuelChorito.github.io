@@ -7,7 +7,7 @@
 
 <body>
     <h1>Retrieve your grade</h1>
-    <form action="http://mumstudents.org/params.php">
+    <form action="http://mumstudents.org/params.php" method="POST">
    
    
     
@@ -18,12 +18,17 @@
     <option value="Assign 2">Assign 2</option>
     <option value="Assign 3">Assign 3</option>
    </select><br>
+   <fieldset>
+ <legend>Entry Month</legend>
+  
     <input type="radio" id="Feb" name="entry" value="Feb">
-    <label for="Feb">Feb</label> <br>
+    <label for="Feb">Feb</label> 
     <input type="radio" id="May" name="entry" value="May">
-    <label for="May">May</label><br>
+    <label for="May">May</label>
+    </fieldset><br>
+    <label for="lie">I'm not Lying</label>
     <input type="checkbox" id="lie" name="lie" value="NotLie">
-    <label for="lie">I'm not Lying</label><br>
+    <br>
     <input type="submit" value="Get Grade">
     </form>
 </body>
