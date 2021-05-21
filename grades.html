@@ -7,23 +7,24 @@
 
 <body>
     <h1>Retrieve your grade</h1>
-    <p>Name: ...</p>
-    <p>Student ID: ...</p>
-    Get Grade!
     <form action="http://mumstudents.org/params.php">
-   <label>Name:</label><input type="text" name="name">
-   <label>ID:</label> <input type="text" name="id">
+   
+   
+    
+   <label>Name:</label><input type="text" name="name"><br>
+   <label>Student ID:</label> <input type="text" name="id"><br>
   <label> choose assignment</label> <select name="assignment">
        <option value="Assign 1">Assign 1</option>
     <option value="Assign 2">Assign 2</option>
     <option value="Assign 3">Assign 3</option>
-   </select>
+   </select><br>
     <input type="radio" id="Feb" name="entry" value="Feb">
-    <label for="Feb">Feb</label> 
+    <label for="Feb">Feb</label> <br>
     <input type="radio" id="May" name="entry" value="May">
-    <label for="May">May</label>
+    <label for="May">May</label><br>
     <input type="checkbox" id="lie" name="lie" value="NotLie">
-    <label for="lie">I'm not Lying</label>
+    <label for="lie">I'm not Lying</label><br>
+    <input type="submit" value="Get Grade">
     </form>
 </body>
 
