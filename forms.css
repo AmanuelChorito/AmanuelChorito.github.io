@@ -5,7 +5,7 @@ div>label{
     text-align: left;
 }
 .controls{
-    margin-bottom: 2px;
+   display: table-row;
 }
 fieldset{
     background-color: gray;
@@ -20,6 +20,13 @@ input[type="submit"]{
 a{
    color: red; 
 }
-label{
+label,input{
+    display: table-cell;
+    margin-bottom: 10px;
+}
+.labels{
     padding-right: 10px;
+}
+form{
+    display: table
 }
