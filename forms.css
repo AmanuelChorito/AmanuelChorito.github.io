@@ -8,6 +8,7 @@ body{
 fieldset{
     background-color: #cccac6;
     width:400px;
+    margin: auto;
 }
 legend{
     background-color: honeydew;
