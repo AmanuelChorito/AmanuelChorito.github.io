@@ -1,9 +1,7 @@
 body{
     margin: auto;
 }
-div>label{
-    text-align: left;
-}
+
 .controls{
    display: table-row;
 }
