@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<!-- saved from url=(0066)http://mumstudents.org/cs472/2021-06-BL/Labs/6/decoratemytext.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-		<title>Text Decorator</title>
-		<link href="./Text Decorator_files/decoratemytext.css" type="text/css" rel="stylesheet">
+<html lang="en">
+  <head>
+    <title>Text Decorator</title>
+    <link href="./styles/decoratemytext.css" type="text/css" rel="stylesheet" />
+  </head>
 
-		
-		<!-- link to your script file here -->
-		
-	</head>
+  <body>
+    <h1>Text Decorator</h1>
 
-	<body>
-		<h1>Text Decorator</h1>
-		
-		<div>
-			<img src="./Text Decorator_files/decorated.gif" alt="very decorated!">
-		</div>
+    <div>
+      <img src="./assets/decorated.gif" alt="very decorated!" />
+    </div>
 
-		<!-- Your UI controls go here -->
-		
-	
+    <!-- Your UI controls go here -->
+    <fieldset>
+      <legend>Text</legend>
 
-</body></html>
+      <textarea rows="4" cols="30" id="txtarea">
+            Smaple text area text
+            Sample text area text
+        </textarea
+      >
+    </fieldset>
+
+    <fieldset>
+      <legend>Decoration</legend>
+      <button onclick="setInterval(changeFont, 500)">Bigger Decorations!</button
+      ><br />
+      <input type="checkbox" onchange="decoreText()" id="blingId" />Bling
+    </fieldset>
+
+    <script src="./js/decoratemytext.js"></script>
+  </body>
+</html>
