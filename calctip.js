@@ -1,4 +1,4 @@
-document.querySelector(alcform).addEventListener("submit", function (e) {
+document.querySelector("#calcform").addEventListener("submit", function (e) {
   e.preventDefault();
   var subtotalElem = document.getElementById("subtotal").value;
   var tipElem = document.getElementById("tip").value;
