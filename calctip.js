@@ -1,4 +1,5 @@
-function calcTip() {
+document.querySelector("#calcform").addEventListener("submit", function (e) {
+  e.preventDefault();
   var subtotalElem = document.getElementById("subtotal").value;
   var tipElem = document.getElementById("tip").value;
   var totalElem = document.getElementById("total");
@@ -6,4 +7,4 @@ function calcTip() {
   var tip = (parseFloat(tipElem) / 100) * subtotal;
   var total = subtotal + tip;
   totalElem.innerHTML = "$" + total;
-}
+});
