@@ -7,4 +7,5 @@ document.querySelector("#calcform").addEventListener("submit", function (e) {
   var tip = (parseFloat(tipElem) / 100) * subtotal;
   var total = subtotal + tip;
   document.getElementById("total").innerHTML = "$" + total;
+  document.getElementById("total").style.color = "red";
 });
