@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Javascript Scope Exercises</title>
+
+    <link href="scope.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>Javascript Module Exercises</h1>
+    <p>
+    1. Determine what this Javascript code will print out (without running it):
+x = 1;
+var a = 5;
+var b = 10;
+var c = function(a, b, c) {
+document.write(x);
+document.write(a);
+var f = function(a, b, c) {
+b = a;
+document.write(b);
+b = c;
+var x = 5;
+}
+f(a,b,c);
+document.write(b);
+var x = 10;
+ }
+c(8,9,10);
+document.write(b);
+document.write(x);
+}
+    </p>
+    <p class="answer">Answer:10 8 8 9 10 1</p>
+    <p>2. Define Global Scope and Local Scope in Javascript.</p>
+    <p class="answer">
+      The method is a function associated with an object. a property of an
+      object that contains a function definition. Methods are functions stored
+      as object properties.<br />
+      Functions have independent existence means they can be defined outside of
+      the class.
+    </p>
+
+    <p>3. Consider the following structure of Javascript code:
+// Scope A
+function XFunc () {
+// Scope B
+function YFunc () {
+// Scope C
+};
+};
+(a) Do statements in Scope A have access to variables defined in Scope B and C?<span class="answer"></span>
+(b) Do statements in Scope B have access to variables defined in Scope A?<span class="answer"></span>
+(c) Do statements in Scope B have access to variables defined in Scope C?<span class="answer"></span>
+(d) Do statements in Scope C have access to variables defined in Scope A?<span class="answer"></span>
+(e) Do statements in Scope C have access to variables defined in Scope B?<span class="answer"></span></p>
+    
+
+    <p>4. What will be printed by the following (answer without running it)?
+var x = 9;
+function myFunction() {
+return x * x;
+}
+document.write(myFunction());
+x = 5;
+document.write(myFunction());</p>
+    <p class="answer">
+     81, 25
+    </p>
+
+    <p>
+  5.
+var foo = 1;
+function bar() {
+if (!foo) {
+var foo = 10;
+}
+alert(foo);
+}
+bar();
+What will the alert print out? (Answer without running the code. Remember ‘hoisting’.)?
+    </p>
+    <p class="answer">
+   alert will print: 10
+    </p>
+
+    <p>
+    6. Consider the following definition of an add( ) function to increment a counter variable:
+var add = (function () {
+var counter = 0;
+return function () {
+return counter += 1;
+}
+ })();
+Modify the above module to define a count object with two methods: add( ) and reset( ). The count.add( ) method
+adds one to the counter (as above). The count.reset( ) method sets the counter to 0.
+    </p>
+    <p class="answer">
+      x
+    </p>
+
+    <p>7. In the definition of add( ) shown in question 6, identify the "free" variable. In the context of a function closure,
+what is a "free" variable?</p>
+    <p class="answer">
+    variable inside a closure:that are neither locally declared nor passed as
+    parameter.
+    </p>
+     8. The add( ) function defined in question 6 always adds 1 to the counter each time it is called. Write a definition
+of a function make_adder(inc), whose return value is an add function with increment value inc (instead of 1). Here
+is an example of using this function:
+add5 = make_adder(5);
+add5( ); add5( ); add5( ); // final counter value is 15
+add7 = make_adder(7);
+add7( ); add7( ); add7( ); // final counter value is 21
+    </p>
+    <p class="answer">
+      <code>
+        const ob={name:'fred', major:'music', 
+calculate:(a,b)=>{ 
+  if(a===b){ return a*b;} 
+  else if (a<b) return a
+  else return b
+  }
+  }
+
+      </code>
+    </p>
+
+    <p>
+     9. Suppose you are given a file of Javascript code containing a list of many function and variable declarations. All of
+these function and variable names will be added to the Global Javascript namespace. What simple modification to
+the Javascript file can remove all the names from the Global namespace?
+    </p>
+    <p class="answer">
+      <code>
+        function Employee(name, salary,position){ this.name=name,
+        this.salary=salary, this.position=position } let Emp1= new
+        Employee('Aman','120000','SWE') console.log(Emp1.name)
+      </code>
+    </p>
+
+    <p>
+   10. Using the Revealing Module Pattern, write a Javascript definition of a Module that creates an Employee Object
+with the following fields and methods:
+Private Field: name
+Private Field: age
+Private Field: salary
+Public Method: setAge(newAge)
+Public Method: setSalary(newSalary)
+Public Method: setName(newName)
+Private Method: getAge( )
+Private Method: getSalary( )
+Private Method: getName( )
+Public Method: increaseSalary(percentage) // uses private getSalary( )
+Public Method: incrementAge( ) // uses private getAge( )
+    </p>
+    <p class="answer">
+      <code>
+        function func(...args) { let sum=0 for(let a in args){ sum*=args[a] }
+        console.log( sum) } func(1,2)</code
+      >
+    </p>
+
+    <p>
+    11. Rewrite your answer to Question 10 using the Anonymous Object Literal Return Pattern.
+    </p>
+    <p class="answer">
+      <code >const three= (a,b,c)=> (a>b && a>c)?a:(b>a && b>c)?b:(c>a &&
+        c>b)?c:false console.log(three(1,2,3))</code>
+    </p>
+
+
+    <p>
+   12. Rewrite your answer to Question 10 using the Locally Scoped Object Literal Pattern.
+    </p>
+    <p class="answer">
+      <code >const three= (a,b,c)=> (a>b && a>c)?a:(b>a && b>c)?b:(c>a &&
+        c>b)?c:false console.log(three(1,2,3))</code>
+    </p>
+    <p>
+   13. Write a few Javascript instructions to extend the Module of Question 10 to have a public address field and
+public methods setAddress(newAddress) and getAddress( ).
+    </p>
+    <p class="answer">
+      <code >const three= (a,b,c)=> (a>b && a>c)?a:(b>a && b>c)?b:(c>a &&
+        c>b)?c:false console.log(three(1,2,3))</code>
+    </p>
+    <p>
+   14. What is the output of the following code?
+const promise = new Promise((resolve, reject) => {
+reject(“Hattori”);
+});
+promise.then(val => alert(“Success: “ + val))
+ .catch(e => alert(“Error: “ + e));
+    </p>
+    <p class="answer">
+      <code >const three= (a,b,c)=> (a>b && a>c)?a:(b>a && b>c)?b:(c>a &&
+        c>b)?c:false console.log(three(1,2,3))</code>
+    </p>
+    <p>
+   15. What is the output of the following code?
+const promise = new Promise((resolve, reject) => {
+resolve(“Hattori”);
+setTimeout(()=> reject(“Yoshi”), 500);
+});
+promise.then(val => alert(“Success: “ + val))
+ .catch(e => alert(“Error: “ + e));
+    </p>
+    <p class="answer">
+      <code >const three= (a,b,c)=> (a>b && a>c)?a:(b>a && b>c)?b:(c>a &&
+        c>b)?c:false console.log(three(1,2,3))</code>
+    </p>
+    <p>
+   16. What is the output of the following code?
+function job(state) {
+ return new Promise(function(resolve, reject) {
+ if (state) {
+ resolve('success');
+ } else {
+ reject('error');
+ }
+ });
+}
+let promise = job(true);
+promise.then(function(data) {
+ console.log(data);
+ return job(false);})
+ .catch(function(error) {
+ console.log(error);
+ return 'Error caught';
+});
+    </p>
+    <p class="answer">
+      <code >const three= (a,b,c)=> (a>b && a>c)?a:(b>a && b>c)?b:(c>a &&
+        c>b)?c:false console.log(three(1,2,3))</code>
+    </p>
+  </body>
+</html>
