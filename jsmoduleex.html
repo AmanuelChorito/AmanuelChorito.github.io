@@ -94,14 +94,35 @@ Modify the above module to define a count object with two methods: add( ) and re
 adds one to the counter (as above). The count.reset( ) method sets the counter to 0.
     </p>
     <p class="answer">
-      x
+   <code>var counter=(function(){
+  var count=0;
+  
+  return {
+    add:function(){
+      count+=1;
+  },
+  reset:function(){
+    count=0;
+  },
+  value:function(){
+    return count
+  },
+    };
+  
+
+})();
+counter.add()
+counter.add()
+console.log(counter.value())
+counter.reset()
+console.log(counter.value())</code>
     </p>
 
     <p>7. In the definition of add( ) shown in question 6, identify the "free" variable. In the context of a function closure,
 what is a "free" variable?</p>
     <p class="answer">
     variable inside a closure:that are neither locally declared nor passed as
-    parameter.
+    parameter. free variable is <Span class="answer"> count </Span>
     </p>
      8. The add( ) function defined in question 6 always adds 1 to the counter each time it is called. Write a definition
 of a function make_adder(inc), whose return value is an add function with increment value inc (instead of 1). Here
@@ -113,14 +134,38 @@ add7( ); add7( ); add7( ); // final counter value is 21
     </p>
     <p class="answer">
       <code>
-        const ob={name:'fred', major:'music', 
-calculate:(a,b)=>{ 
-  if(a===b){ return a*b;} 
-  else if (a<b) return a
-  else return b
+       var counter=(function(){
+  var count=0;
+ 
+  return {
+  make_adder: function(val){
+    return function(){
+      count+=val
+    }
   }
+  ,
+  reset:function(){
+    count=0;
+  },
+  value:function(){
+    return count
   }
+    };
+  
 
+})();
+var add5=counter.make_adder(5);
+add5();
+add5();
+add5();
+console.log(counter.value())
+counter.reset()
+console.log(counter.value())
+var add7=counter.make_adder(7);
+add7();
+add7();
+add7();
+console.log(counter.value())
       </code>
     </p>
 
