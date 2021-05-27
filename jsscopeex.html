@@ -49,7 +49,9 @@
       has a method f( ) containing keyword 'this'. When f is called by x.f( ),
       what does 'this' refer to?
     </p>
-    <p class="answer"></p>
+    <p class="answer">
+      x
+    </p>
 
     <p>7. What is a free variable in JavaScript?</p>
     <p class="answer">
@@ -63,8 +65,14 @@
     </p>
     <p class="answer">
       <code>
-        const ob={name:'fred', major:'music', calculate:function(a,b){
-        if(a===b){ return a*b;} else if (a<b) { return a;} else{ return b} } }
+        const ob={name:'fred', major:'music', 
+calculate:(a,b)=>{ 
+  if(a===b){ return a*b;} 
+  else if (a<b) return a
+  else return b
+  }
+  }
+
       </code>
     </p>
 
@@ -87,7 +95,7 @@
     </p>
     <p class="answer">
       <code>
-        function func(...args) { let sum=0 for(let a in args){ sum+=args[a] }
+        function func(...args) { let sum=0 for(let a in args){ sum*=args[a] }
         console.log( sum) } func(1,2)</code
       >
     </p>
