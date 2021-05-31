@@ -1,6 +1,7 @@
-.boundary1 {
-  background-color: aliceblue;
+#boundary1 {
+  background-color: black;
   border: black solid 1px;
+  border-right: 0;
   width: 300px;
   padding: 50px;
   margin: 20px;
@@ -8,13 +9,14 @@
 
 #boundary2 {
   background-color: aquamarine;
-  border: black solid 1px;
+  border: aliceblue solid 1px;
   border-bottom: 0;
   width: 300px;
 }
 #boundary3 {
   background-color: black;
   border: black solid 1px;
+  border-left: 0;
   width: 300px;
   padding: 50px;
 }
