@@ -9,6 +9,7 @@
 #boundary2 {
   background-color: aquamarine;
   border: black solid 1px;
+  border-bottom: 0;
   width: 300px;
 }
 #boundary3 {
