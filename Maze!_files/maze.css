@@ -1,16 +1,21 @@
 .boundary1 {
   background-color: aliceblue;
+  border: black solid 1px;
 }
 
 .boundary2 {
   background-color: aquamarine;
+  border: black solid 1px;
 }
 .boundary3 {
   background-color: black;
+  border: black solid 1px;
 }
 .boundary4 {
   background-color: brown;
+  border: black solid 1px;
 }
 .boundary5 {
   background-color: chocolate;
+  border: black solid 1px;
 }
