@@ -4,6 +4,7 @@
   border-right: 0;
   width: 300px;
   padding: 50px;
+  display: inline-block;
 }
 
 .two {
@@ -11,6 +12,7 @@
   border: black solid 1px;
   width: 300px;
   padding: 50px;
+  display: inline-block;
 
   border-bottom: 0;
 }
@@ -20,16 +22,5 @@
   border-left: 0;
   width: 300px;
   padding: 50px;
-}
-.boundary4 {
-  background-color: brown;
-  border: black solid 1px;
-  width: 300px;
-  padding: 50px;
-}
-.boundary5 {
-  background-color: chocolate;
-  border: black solid 1px;
-  width: 300px;
-  padding: 50px;
+  display: inline-block;
 }
