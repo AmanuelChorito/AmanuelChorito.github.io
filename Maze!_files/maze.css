@@ -1,4 +1,4 @@
-.boundary1 {
+.one {
   background-color: black;
   border: black solid 1px;
   border-right: 0;
@@ -7,13 +7,13 @@
   margin: 20px;
 }
 
-.boundary2 {
+.two {
   background-color: aquamarine;
   border: aliceblue solid 1px;
   border-bottom: 0;
   width: 300px;
 }
-.boundary3 {
+.three {
   background-color: black;
   border: black solid 1px;
   border-left: 0;
