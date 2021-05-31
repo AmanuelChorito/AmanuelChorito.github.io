@@ -6,28 +6,28 @@
   margin: 20px;
 }
 
-.boundary2 {
+#boundary2 {
   background-color: aquamarine;
   border: black solid 1px;
   width: 300px;
   padding: 50px;
   margin: 20px;
 }
-.boundary3 {
+#boundary3 {
   background-color: black;
   border: black solid 1px;
   width: 300px;
   padding: 50px;
   margin: 20px;
 }
-.boundary4 {
+#boundary4 {
   background-color: brown;
   border: black solid 1px;
   width: 300px;
   padding: 50px;
   margin: 20px;
 }
-.boundary5 {
+#boundary5 {
   background-color: chocolate;
   border: black solid 1px;
   width: 300px;
