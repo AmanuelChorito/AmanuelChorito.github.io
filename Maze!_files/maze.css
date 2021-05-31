@@ -10,6 +10,7 @@
 .two {
   background-color: aquamarine;
   border: black solid 1px;
+  border-bottom: 0;
   width: 300px;
   padding: 50px;
   display: inline-block;
