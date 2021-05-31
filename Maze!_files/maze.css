@@ -9,9 +9,11 @@
 
 .two {
   background-color: aquamarine;
-  border: aliceblue solid 1px;
-  border-bottom: 0;
+  border: black solid 1px;
   width: 300px;
+  padding: 50px;
+  margin: 20px;
+  border-bottom: 0;
 }
 .three {
   background-color: black;
