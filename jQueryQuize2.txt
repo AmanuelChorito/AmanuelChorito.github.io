@@ -9,7 +9,10 @@ $(document).ready(function () { $('div ul').each(function (idx, e) {
 $(this).css('color', 'blue'); }); }); 
 
 3. Write jQuery code to append the following div element (and all of its contents) dynamically to the body
-element."div h1 JQuery Core h1 div $(document).ready(function () { 
+element.
+"div h1 JQuery Core h1 div 
+Answer:
+$(document).ready(function () { 
   var msg = "<div><h1>JQuery  Core</h1></div>"
 ;
  $('body').append(msg);
