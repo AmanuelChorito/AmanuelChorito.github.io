@@ -1,2 +1,4 @@
-var discount_msg = " <div><h1>" + JQuery + " " + Core + "%</h1></div>";
-$("body").append(discount_msg);
+$(document).ready(function () {
+  var msg = " <div><h1>" + JQuery + " " + Core + "%</h1></div>";
+  $("body").append(msg);
+});
