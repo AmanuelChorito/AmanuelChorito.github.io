@@ -50,13 +50,20 @@
       <div>
         (great-grandparent)
         <ul>
-          (grandparent)
-          <li>
-            (direct parent)
-            <span>some text</span>
-          </li>
+          <li>(grandparent)</li>
+          <li>(grandparent)</li>
+          <li>(direct parent)<span>some text</span></li>
         </ul>
       </div>
+    </div>
+    <div>
+      <pre>
+ $(document).ready(function () {
+$("ul.level-2").children().css("background-color","red")
+$(".third-item").prevAll().css("background-color","blue")
+$("span").parent().css("background-color","green")
+});</pre
+      >
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
