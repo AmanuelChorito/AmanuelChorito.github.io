@@ -5,9 +5,9 @@ represent index and current DOM element respectively.
 
 
  2.
-$(document).ready(function () { $('div ul').each(function (idx, e) {
-$(this).css('color', 'blue'); }); }); 
-
+ $(document).ready(function () {
+      $("div ul").css("color","blue");
+    });
 3. Write jQuery code to append the following div element (and all of its contents) dynamically to the body
 element.
 "div h1 JQuery Core h1 div 
