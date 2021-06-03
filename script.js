@@ -1,8 +1,5 @@
 $(document).ready(function () {
-  var de = $("ul.level-2")
-    .children()
-    .not($("ul.level-3"))
-    .css("background-color", "blue");
+  var de = $("ul.level-2").children().css("background-color", "blue");
 
   var x = $("ul.level-3").detach();
 
