@@ -14,7 +14,7 @@ exports.result = function (req, res, vals) {
   res.write(String(output));
   res.write("</p>");
   res.write(
-    "<a href='https://amanuelchorito.github.io/SimpleCalculator.html'>Go Back</a>"
+    "<a href='https://amanuelchorito.github.io/simplecalc_nodejs.html'>Go Back</a>"
   );
   res.write("</body>");
   res.write("</html>");
