@@ -1,47 +1,17 @@
 <!DOCTYPE html>
-<html lan=en>
-<head>
-    <script>
-        function calc() {
-             let x = document.getElementById("number1").value;
-            let y = document.getElementById("number2").value
-            
-            let selectedOperation= document.querySelector('#operation').value;
-            console.log(selectedOperation)
-            switch(selectedOperation){
-                case '+': 
-                        result = parseInt(x) + parseInt(y)
-                         document.write("<p>The Answer is " + result + "</p>");
-                    break;
-                case '*'  :
-                    result = parseInt(x) * parseInt(y)
-                    document.write("<p>The Answer is " + result + "</p>");
-                    break;
-                case '-':
-                    result = parseInt(x) - parseInt(y)
-                    document.write("<p>The Answer is " + result + "</p>");
-                    break;
-                case '/':
-                    result = parseInt(x)/parseInt(y)
-                    document.write("<p>The Answer is " + result + "</p><a href='https://amanuelchorito.github.io/SimpleCalculator.html'>Go Back</a>");
-            default:
-            
-            }
-        }
-    </script>
-</head>
-<body>
-    <form onsubmit="calc()">
-   <input type="text" id="number1" >
-    <input type="text" id="number2">
-    <select name="operation" id="operation">
-        <option value="+">Add</option>
-        <option value="*">Multiply</option>
-        <option value="-">Substract</option>
-        <option value="/">Divide</option>
-    </select>
-    <input type="submit" value="submit" >
-</form>
-</body>
-
+<html lan="en">
+  <head> </head>
+  <body>
+    <form action="http://localhost:8085/">
+      <input type="text" name="number1" />
+      <input type="text" name="number2" />
+      <select name="operation" id="operation">
+        <option value="Add">Add</option>
+        <option value="Multiply">Multiply</option>
+        <option value="Substract">Substract</option>
+        <option value="Divide">Divide</option>
+      </select>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
 </html>
