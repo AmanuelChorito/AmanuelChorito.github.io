@@ -17,12 +17,13 @@ exports.guessnumber = function (req, res, vals) {
   var score = 0;
   if (!hidden) {
     hidden = 0;
+    console.log("if+" + hidden);
     displayQuestion(req, res, nums.pi, score, hidden);
   } else {
     if (hidden == 0 && youranswer == answer[0]) {
       console.log(score++);
       hidden++;
-      console.log("hidw+" + hidden);
+      console.log("else+" + hidden);
       displayQuestion(req, res, nums.fib, score, hidden);
     }
   }
