@@ -23,7 +23,7 @@ exports.guessnumber = function (req, res, vals) {
 
     displayQuestion(req, res, nums.pi, score, hidden);
   } else {
-    switch (hidde) {
+    switch (hidden) {
       case 1:
         if (youranswer == answer[0]) {
           hidden++;
