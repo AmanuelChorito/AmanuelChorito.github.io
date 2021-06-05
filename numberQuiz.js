@@ -15,12 +15,13 @@ exports.guessnumber = function (req, res, vals) {
   const answer = [9, 8, 36, 13, 32];
   let quiznumber = 0;
   var score = 0;
+
   if (!hidden) {
-    hidden = 0;
+    hidden = 1;
     console.log("if+" + hidden);
     displayQuestion(req, res, nums.pi, score, hidden);
   } else {
-    if (hidden == 0 && youranswer == answer[0]) {
+    if (hidden == 1 && youranswer == answer[0]) {
       console.log(score++);
       hidden++;
       console.log("else+" + hidden);
