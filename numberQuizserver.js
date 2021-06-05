@@ -5,7 +5,7 @@ var output = require("./numberQuiz.js");
 var flag = true;
 http
   .createServer(function (req, res) {
-    if (req.url == "/startquiz" || "/quiz") {
+    if (req.url == "/startquiz" || req.url == "/quiz") {
       var q = new URL(req.url, "https://localhost:8085/");
       output.guessnumber(req, res, q.searchParams);
     }
