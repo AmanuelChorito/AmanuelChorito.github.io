@@ -62,8 +62,7 @@ function displayQuestion(req, res, list, score, hidden) {
   res.write(`<input type="hidden" name="quiznumber" value=${hidden} />`);
   res.write("<div>");
   res.write("<p> your score is :");
-  res.write(`<input type="hidden" name="score" value=${score} readonly/>`);
-
+  res.write(`<input type="text" name="score" value=${score} readonly/>`);
   res.write("</p>");
   res.write("<p>Guess the next number in the sequence.</p>");
   res.write("<p>");
