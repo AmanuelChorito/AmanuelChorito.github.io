@@ -1,11 +1,11 @@
 exports.guessnumber = function (req, res, vals) {
-  const nums = [
-    [3, 1, 4, 1, 5],
-    [1, 1, 2, 3, 5],
-    [1, 4, 9, 16, 25],
-    [2, 3, 5, 7, 11],
-    [1, 2, 4, 8, 16],
-  ];
+  const nums = {
+    pi: [3, 1, 4, 1, 5],
+    fib: [1, 1, 2, 3, 5],
+    sq: [1, 4, 9, 16, 25],
+    pr: [2, 3, 5, 7, 11],
+    pow: [1, 2, 4, 8, 16],
+  };
   const answer = [9, 8, 36, 13, 32];
   let quiznumber = 0;
   let score = 0;
@@ -25,7 +25,7 @@ exports.guessnumber = function (req, res, vals) {
   res.write("</p>");
   res.write("<p>Guess the next number in the sequence.</p>");
   res.write("<p>");
-  res.write(nums[0][quiznumber]);
+  res.write(String(nums.pi));
   res.write("</p>");
   res.write("<label>your answer:</label>");
   res.write('<input type="text" name="youranswer"/>');
