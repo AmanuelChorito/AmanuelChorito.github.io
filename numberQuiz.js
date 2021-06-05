@@ -25,7 +25,7 @@ exports.guessnumber = function (req, res, vals) {
   res.write("</p>");
   res.write("<p>Guess the next number in the sequence.</p>");
   res.write("<p>");
-  res.write(nums[quiznumber]);
+  res.write(nums[0][quiznumber]);
   res.write("</p>");
   res.write("<label>your answer:</label>");
   res.write('<input type="text" name="youranswer"/>');
