@@ -22,6 +22,7 @@ exports.guessnumber = function (req, res, vals) {
     if (hidden == 0 && youranswer == answer[0]) {
       console.log(score++);
       hidden++;
+      console.log("hidw+" + hidden);
       displayQuestion(req, res, nums.fib, score, hidden);
     }
   }
