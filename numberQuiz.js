@@ -43,11 +43,6 @@ exports.guessnumber = function (req, res, vals) {
       score++;
       displayQuestion(req, res, nums.pow, score, hidden);
     }
-    if (hidden == 5 && youranswer == answer[4]) {
-      hidden++;
-      score++;
-      displayQuestion(req, res, nums.sq, score, hidden);
-    }
   }
 };
 function displayQuestion(req, res, list, score, hidden) {
