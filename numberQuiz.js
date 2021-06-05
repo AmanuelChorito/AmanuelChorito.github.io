@@ -23,30 +23,84 @@ exports.guessnumber = function (req, res, vals) {
 
     displayQuestion(req, res, nums.pi, score, hidden);
   } else {
-    if (hidden == 1 && youranswer == answer[0]) {
-      hidden++;
-      score++;
-      displayQuestion(req, res, nums.fib, score, hidden);
+    switch (hidde) {
+      case 1:
+        if (youranswer == answer[0]) {
+          hidden++;
+          score++;
+          displayQuestion(req, res, nums.fib, score, hidden);
+        } else {
+          hidden++;
+          displayQuestion(req, res, nums.fib, score, hidden);
+        }
+        break;
+      case 2:
+        if (youranswer == answer[1]) {
+          hidden++;
+          score++;
+          displayQuestion(req, res, nums.fib, score, hidden);
+        } else {
+          hidden++;
+          displayQuestion(req, res, nums.fib, score, hidden);
+        }
+        break;
+      case 3:
+        if (youranswer == answer[2]) {
+          hidden++;
+          score++;
+          displayQuestion(req, res, nums.fib, score, hidden);
+        } else {
+          hidden++;
+          displayQuestion(req, res, nums.fib, score, hidden);
+        }
+        break;
+      case 4:
+        if (youranswer == answer[3]) {
+          hidden++;
+          score++;
+          displayQuestion(req, res, nums.fib, score, hidden);
+        } else {
+          hidden++;
+          displayQuestion(req, res, nums.fib, score, hidden);
+        }
+        break;
+      case 5:
+        if (youranswer == answer[4]) {
+          hidden++;
+          score++;
+          displayfnalMesg(req, res, score, answer.length);
+        } else {
+          hidden++;
+          displayfnalMesg(req, res, score, answer.length);
+        }
+        break;
+      default:
+        break;
     }
-    if (hidden == 2 && youranswer == answer[1]) {
-      hidden++;
-      score++;
-      displayQuestion(req, res, nums.sq, score, hidden);
-    }
-    if (hidden == 3 && youranswer == answer[2]) {
-      hidden++;
-      score++;
-      displayQuestion(req, res, nums.pr, score, hidden);
-    }
-    if (hidden == 4 && youranswer == answer[3]) {
-      hidden++;
-      score++;
-      displayQuestion(req, res, nums.pow, score, hidden);
-    }
-    if (hidden == 5 && youranswer == answer[4]) {
-      score++;
-      displayfnalMesg(req, res, score, answer.length);
-    }
+    // if (hidden == 1 && youranswer == answer[0]) {
+    //   hidden++;
+    //   score++;
+    //   displayQuestion(req, res, nums.fib, score, hidden);
+    // }
+    // if (hidden == 2 && youranswer == answer[1]) {
+    //   hidden++;
+    //   score++;
+    //   displayQuestion(req, res, nums.sq, score, hidden);
+    // }
+    // if (hidden == 3 && youranswer == answer[2]) {
+    //   hidden++;
+    //   score++;
+    //   displayQuestion(req, res, nums.pr, score, hidden);
+    // }
+    // if (hidden == 4 && youranswer == answer[3]) {
+    //   hidden++;
+    //   score++;
+    //   displayQuestion(req, res, nums.pow, score, hidden);
+    // }
+    // if (hidden == 5 && youranswer == answer[4]) {
+    //   score++;
+    //   displayfnalMesg(req, res, score, answer.length);
+    // }
   }
 };
 function displayQuestion(req, res, list, score, hidden) {
