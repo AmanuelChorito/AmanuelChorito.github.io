@@ -36,12 +36,12 @@ exports.guessnumber = function (req, res, vals) {
     if (hidden == 3 && youranswer == answer[2]) {
       hidden++;
       score++;
-      displayQuestion(req, res, nums.sq, score, hidden);
+      displayQuestion(req, res, nums.pr, score, hidden);
     }
     if (hidden == 4 && youranswer == answer[3]) {
       hidden++;
       score++;
-      displayQuestion(req, res, nums.sq, score, hidden);
+      displayQuestion(req, res, nums.pow, score, hidden);
     }
     if (hidden == 5 && youranswer == answer[4]) {
       hidden++;
