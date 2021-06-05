@@ -25,22 +25,22 @@ exports.guessnumber = function (req, res, vals) {
   } else {
     if (hidden == 1 && youranswer == answer[0]) {
       hidden++;
-      score++;
+      ++score;
       displayQuestion(req, res, nums.fib, score, hidden);
     }
     if (hidden == 2 && youranswer == answer[1]) {
       hidden++;
-      score++;
+      ++score;
       displayQuestion(req, res, nums.sq, score, hidden);
     }
     if (hidden == 3 && youranswer == answer[2]) {
       hidden++;
-      score++;
+      ++score;
       displayQuestion(req, res, nums.pr, score, hidden);
     }
     if (hidden == 4 && youranswer == answer[3]) {
       hidden++;
-      score++;
+      ++score;
       displayQuestion(req, res, nums.pow, score, hidden);
     }
     if (hidden == 5 && youranswer == answer[4]) {
