@@ -19,7 +19,7 @@ exports.guessnumber = function (req, res, vals) {
 
   if (!hidden) {
     hidden = 1;
-    score = 1;
+    score = 0;
 
     displayQuestion(req, res, nums.pi, score, hidden);
   } else {
@@ -44,6 +44,7 @@ exports.guessnumber = function (req, res, vals) {
       displayQuestion(req, res, nums.pow, score, hidden);
     }
     if (hidden == 5 && youranswer == answer[4]) {
+      score++;
       displayfnalMesg(req, res, score, answer.length);
     }
   }
