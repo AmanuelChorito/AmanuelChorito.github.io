@@ -43,6 +43,9 @@ exports.guessnumber = function (req, res, vals) {
       score++;
       displayQuestion(req, res, nums.pow, score, hidden);
     }
+    if (hidden == 5) {
+      displayfnalMesg(req, res, score, hidden);
+    }
   }
 };
 function displayQuestion(req, res, list, score, hidden) {
@@ -72,8 +75,34 @@ function displayQuestion(req, res, list, score, hidden) {
   res.write("</form>");
 
   res.write(
-    "<a href='https://amanuelchorito.github.io/simplecalc_nodejs.html'>Go Back</a>"
+    "<a href='https://amanuelchorito.github.io/startquiz.html'>Start over</a>"
   );
+  res.write("</body>");
+  res.write("</html>");
+  return res.end();
+}
+function displayfnalMesg(req, res, score, hidden) {
+  res.writeHead(200, { "Content-Type": "text/html" });
+  res.write("<!DOCTYPE html>");
+  res.write("<html>");
+  res.write('<head><meta charset="utf-8"/>');
+  res.write("<title>Quiz Game</title>");
+  res.write("</head>");
+  res.write("<body>");
+  res.write(`<input type="hidden" name="quiznumber" value=${hidden} />`);
+  res.write("<div>");
+  res.write("<h1> The Number Quiz");
+  res.write("</h1>");
+  res.write("<p>your current score is</p>");
+  res.write(`${score}`);
+  res.write("<p> You have completed the Number Quiz, with a score of");
+  res.write(`${score}`);
+  res.write("out of");
+  res.write(`${hidden - 1}`);
+  res.write("</p>");
+
+  res.write("</div>");
+
   res.write("</body>");
   res.write("</html>");
   return res.end();
