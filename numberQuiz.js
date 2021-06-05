@@ -36,7 +36,7 @@ function displayQuestion(req, res, list, score, hidden) {
   res.write("<body>");
   res.write('<form action="http://localhost:8085/">');
   res.write("<label name=quiznumber>");
-  res.write('<input type="hidden" name="quiznumber" value=`${hidden}` />');
+  res.write(`<input type="hidden" name="quiznumber" value=${hidden} />`);
   res.write("<div>");
   res.write("<p> your score is :");
   res.write(String(score));
