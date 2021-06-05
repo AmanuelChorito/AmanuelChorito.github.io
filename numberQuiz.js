@@ -2,9 +2,9 @@ exports.guessnumber = function (req, res, vals) {
   let hidden = parseInt(vals.get("quiznumber"));
   let youranswer = parseInt(vals.get("youranswer"));
 
-  console.log(hidden);
+  console.log("hidden" + hidden);
 
-  console.log(youranswer);
+  console.log("your answer" + youranswer);
   const nums = {
     pi: [3, 1, 4, 1, 5],
     fib: [1, 1, 2, 3, 5],
@@ -15,12 +15,14 @@ exports.guessnumber = function (req, res, vals) {
   const answer = [9, 8, 36, 13, 32];
   let quiznumber = 0;
   var score = 0;
-  if (hidden) {
-    displayQuestion(req, res, nums.pi, score);
+  if (!hidden) {
+    hidden = 0;
+    displayQuestion(req, res, nums.pi, score, hidden);
   } else {
     if (hidden == 0 && youranswer == answer[0]) {
-      score++;
-      displayQuestion(req, res, nums.fib, score);
+      console.log(score++);
+      hidden++;
+      displayQuestion(req, res, nums.fib, score, hidden);
     }
   }
 };
@@ -34,7 +36,7 @@ function displayQuestion(req, res, list, score) {
   res.write("<body>");
   res.write('<form action="http://localhost:8085/">');
   res.write("<label name=quiznumber>");
-  res.write('<input type="hidden" name="quiznumber" value="0" />');
+  res.write('<input type="hidden" name="quiznumber" value=`${hidden}` />');
   res.write("<div>");
   res.write("<p> your score is :");
   res.write(String(score));
