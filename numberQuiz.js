@@ -1,12 +1,12 @@
 exports.guessnumber = function (req, res, vals) {
   if(vals.get("Submit"))
-  const nums = [[3, 1, 4, 1, 5] [1, 1, 2, 3, 5],[1, 4, 9, 16, 25],[2, 3, 5, 7, 11],[1, 2, 4, 8, 16]]
+  const nums = [[3, 1, 4, 1, 5] [1, 1, 2, 3, 5],[1, 4, 9, 16, 25],[2, 3, 5, 7, 11],[1, 2, 4, 8, 16]];
   const answer=[9, 8, 36, 13, 32];
 let quiznumber=0;
   let num1 = parseInt(vals.get("number1"));
   let num2 = parseInt(vals.get("number2"));
   let selectedOperation = vals.get("operation");
-  output = calc(num1, num2, selectedOperation);
+  
   res.writeHead(200, { "Content-Type": "text/html" });
   res.write("<!DOCTYPE html>");
   res.write("<html>");
