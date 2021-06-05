@@ -19,6 +19,7 @@ exports.guessnumber = function (req, res, vals) {
 
   if (!hidden) {
     hidden = 1;
+    score = 0;
 
     displayQuestion(req, res, nums.pi, score, hidden);
   } else {
