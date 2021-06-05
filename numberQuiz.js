@@ -6,6 +6,8 @@ exports.guessnumber = function (req, res, vals) {
     pr: [2, 3, 5, 7, 11],
     pow: [1, 2, 4, 8, 16],
   };
+  let hidden = vals.get("quiznumber");
+  console.log(hidden);
   const answer = [9, 8, 36, 13, 32];
   let quiznumber = 0;
   let score = 0;
