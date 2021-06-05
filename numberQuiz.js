@@ -44,7 +44,7 @@ exports.guessnumber = function (req, res, vals) {
       displayQuestion(req, res, nums.pow, score, hidden);
     }
     if (hidden == 5) {
-      displayfnalMesg(req, res, score, hidden);
+      displayfnalMesg(req, res, score, answer.length);
     }
   }
 };
@@ -81,7 +81,7 @@ function displayQuestion(req, res, list, score, hidden) {
   res.write("</html>");
   return res.end();
 }
-function displayfnalMesg(req, res, score, hidden) {
+function displayfnalMesg(req, res, score, ans) {
   res.writeHead(200, { "Content-Type": "text/html" });
   res.write("<!DOCTYPE html>");
   res.write("<html>");
@@ -89,7 +89,6 @@ function displayfnalMesg(req, res, score, hidden) {
   res.write("<title>Quiz Game</title>");
   res.write("</head>");
   res.write("<body>");
-  res.write(`<input type="hidden" name="quiznumber" value=${hidden} />`);
   res.write("<div>");
   res.write("<h1> The Number Quiz");
   res.write("</h1>");
@@ -98,7 +97,7 @@ function displayfnalMesg(req, res, score, hidden) {
   res.write("<p> You have completed the Number Quiz, with a score of");
   res.write(`${score}`);
   res.write("out of");
-  res.write(`${hidden - 1}`);
+  res.write(`${ans}`);
   res.write("</p>");
   res.write("</div>");
   res.write("</body>");
