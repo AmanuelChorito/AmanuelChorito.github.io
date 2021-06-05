@@ -129,9 +129,7 @@ function displayQuestion(req, res, list, score, hidden) {
   res.write("</div>");
   res.write("</form>");
 
-  res.write(
-    "<a href='https://amanuelchorito.github.io/startquiz.html'>Start over</a>"
-  );
+  res.write("<a href='http://localhost:8085/'>Start over</a>");
   res.write("</body>");
   res.write("</html>");
   return res.end();
@@ -147,11 +145,11 @@ function displayfnalMesg(req, res, score, ans) {
   res.write("<div>");
   res.write("<h1> The Number Quiz");
   res.write("</h1>");
-  res.write("<p>your current score is</p>");
+  res.write("<p>your current score is </p>");
   res.write(`${score}`);
   res.write("<p> You have completed the Number Quiz, with a score of ");
   res.write(`${score}`);
-  res.write("out of ");
+  res.write(" out of ");
   res.write(`${ans}`);
   res.write("</p>");
   res.write("</div>");
