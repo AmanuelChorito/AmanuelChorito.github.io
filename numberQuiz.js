@@ -1,7 +1,10 @@
 exports.guessnumber = function (req, res, vals) {
   let hidden = parseInt(vals.get("quiznumber"));
   let youranswer = parseInt(vals.get("youranswer"));
+
   console.log(hidden);
+
+  console.log(youranswer);
   const nums = {
     pi: [3, 1, 4, 1, 5],
     fib: [1, 1, 2, 3, 5],
@@ -13,15 +16,15 @@ exports.guessnumber = function (req, res, vals) {
   let quiznumber = 0;
   var score = 0;
   if (!hidden) {
-    displayQuestion(req, res, nums.pi);
+    displayQuestion(req, res, nums.pi, score);
   } else {
     if (hidden == 0 && youranswer == answer[0]) {
       score++;
-      displayQuestion(req, res, nums.fib);
+      displayQuestion(req, res, nums.fib, score);
     }
   }
 };
-function displayQuestion(req, res, list) {
+function displayQuestion(req, res, list, score) {
   res.writeHead(200, { "Content-Type": "text/html" });
   res.write("<!DOCTYPE html>");
   res.write("<html>");
