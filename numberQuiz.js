@@ -11,7 +11,7 @@ exports.guessnumber = function (req, res, vals) {
   let num1 = parseInt(vals.get("number1"));
   let num2 = parseInt(vals.get("number2"));
   let selectedOperation = vals.get("operation");
-
+  let score = 0;
   res.writeHead(200, { "Content-Type": "text/html" });
   res.write("<!DOCTYPE html>");
   res.write("<html>");
