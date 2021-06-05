@@ -18,14 +18,16 @@ exports.guessnumber = function (req, res, vals) {
 
   if (!hidden) {
     hidden = 1;
-    console.log("if+" + hidden);
+
     displayQuestion(req, res, nums.pi, score, hidden);
   } else {
     if (hidden == 1 && youranswer == answer[0]) {
-      console.log(score++);
       hidden++;
-      console.log("else+" + hidden);
       displayQuestion(req, res, nums.fib, score, hidden);
+    }
+    if (hidden == 2 && youranswer == answer[1]) {
+      hidden++;
+      displayQuestion(req, res, nums.sq, score, hidden);
     }
   }
 };
@@ -62,11 +64,3 @@ function displayQuestion(req, res, list, score, hidden) {
   res.write("</html>");
   return res.end();
 }
-//Write a node.js web application that
-// presents a series of quiz questions.
-// Each question displays a sequence of numbers and asks the participant to guess the next number of the
-//sequence. For example, the first sequence is 3 1 4 1 5.
-//pi 3.141592653589793
-//There may be many Users of the web
-//site at the same time. (Hint: Use Hidden form parameters to remember the quiz number and
-//score of each User.)
