@@ -2,9 +2,9 @@ exports.guessnumber = function (req, res, vals) {
   let hidden = parseInt(vals.get("quiznumber"));
   let youranswer = parseInt(vals.get("youranswer"));
 
-  console.log("hidden" + hidden);
+  // console.log("hidden" + hidden);
 
-  console.log("your answer" + youranswer);
+  // console.log("your answer" + youranswer);
   const nums = {
     pi: [3, 1, 4, 1, 5],
     fib: [1, 1, 2, 3, 5],
