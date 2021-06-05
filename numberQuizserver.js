@@ -5,10 +5,6 @@ var output = require("./numberQuiz.js");
 var flag = true;
 http
   .createServer(function (req, res) {
-    if (req.url == "/startquiz" || req.url == "/quiz") {
-      var q = new URL(req.url, "https://localhost:8085/");
-      output.guessnumber(req, res, q.searchParams);
-    }
     if (flag) {
       flag = false;
       res.writeHead(200, { "Content-Type": "text/html" });
@@ -17,6 +13,9 @@ http
       );
       res.write('<input type="submit" value="Start">');
       res.write("</form>");
+    } else {
+      var q = new URL(req.url, "https://localhost:8085/");
+      output.guessnumber(req, res, q.searchParams);
     }
     return res.end();
   })
