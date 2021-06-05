@@ -95,9 +95,9 @@ function displayfnalMesg(req, res, score, ans) {
   res.write("</h1>");
   res.write("<p>your current score is</p>");
   res.write(`${score}`);
-  res.write("<p> You have completed the Number Quiz, with a score of");
+  res.write("<p> You have completed the Number Quiz, with a score of ");
   res.write(`${score}`);
-  res.write("out of");
+  res.write("out of ");
   res.write(`${ans}`);
   res.write("</p>");
   res.write("</div>");
