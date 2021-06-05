@@ -100,9 +100,7 @@ function displayfnalMesg(req, res, score, hidden) {
   res.write("out of");
   res.write(`${hidden - 1}`);
   res.write("</p>");
-
   res.write("</div>");
-
   res.write("</body>");
   res.write("</html>");
   return res.end();
