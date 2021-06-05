@@ -38,30 +38,30 @@ exports.guessnumber = function (req, res, vals) {
         if (youranswer == answer[1]) {
           hidden++;
           score++;
-          displayQuestion(req, res, nums.fib, score, hidden);
+          displayQuestion(req, res, nums.sq, score, hidden);
         } else {
           hidden++;
-          displayQuestion(req, res, nums.fib, score, hidden);
+          displayQuestion(req, res, nums.sq, score, hidden);
         }
         break;
       case 3:
         if (youranswer == answer[2]) {
           hidden++;
           score++;
-          displayQuestion(req, res, nums.fib, score, hidden);
+          displayQuestion(req, res, nums.pr, score, hidden);
         } else {
           hidden++;
-          displayQuestion(req, res, nums.fib, score, hidden);
+          displayQuestion(req, res, nums.pr, score, hidden);
         }
         break;
       case 4:
         if (youranswer == answer[3]) {
           hidden++;
           score++;
-          displayQuestion(req, res, nums.fib, score, hidden);
+          displayQuestion(req, res, nums.pow, score, hidden);
         } else {
           hidden++;
-          displayQuestion(req, res, nums.fib, score, hidden);
+          displayQuestion(req, res, nums.pow, score, hidden);
         }
         break;
       case 5:
