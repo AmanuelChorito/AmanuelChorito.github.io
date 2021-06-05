@@ -1,7 +1,8 @@
 exports.guessnumber = function (req, res, vals) {
+  var score = 0;
   let hidden = parseInt(vals.get("quiznumber"));
   let youranswer = parseInt(vals.get("youranswer"));
-
+  let prevscore = parseInt(vals.get("score"));
   // console.log("hidden" + hidden);
 
   // console.log("your answer" + youranswer);
@@ -14,7 +15,7 @@ exports.guessnumber = function (req, res, vals) {
   };
   const answer = [9, 8, 36, 13, 32];
   let quiznumber = 0;
-  var score = 0;
+  score = score + prevscore;
 
   if (!hidden) {
     hidden = 1;
@@ -61,7 +62,8 @@ function displayQuestion(req, res, list, score, hidden) {
   res.write(`<input type="hidden" name="quiznumber" value=${hidden} />`);
   res.write("<div>");
   res.write("<p> your score is :");
-  res.write(`${score}`);
+  res.write(`<input type="hidden" name="score" value=${score} readonly/>`);
+
   res.write("</p>");
   res.write("<p>Guess the next number in the sequence.</p>");
   res.write("<p>");
