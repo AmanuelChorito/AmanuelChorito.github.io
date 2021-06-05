@@ -15,7 +15,7 @@ exports.guessnumber = function (req, res, vals) {
   const answer = [9, 8, 36, 13, 32];
   let quiznumber = 0;
   var score = 0;
-  if (!hidden) {
+  if (hidden) {
     displayQuestion(req, res, nums.pi, score);
   } else {
     if (hidden == 0 && youranswer == answer[0]) {
