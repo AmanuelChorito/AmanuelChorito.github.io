@@ -26,7 +26,7 @@ exports.guessnumber = function (req, res, vals) {
     }
   }
 };
-function displayQuestion(req, res, list, score) {
+function displayQuestion(req, res, list, score, hidden) {
   res.writeHead(200, { "Content-Type": "text/html" });
   res.write("<!DOCTYPE html>");
   res.write("<html>");
