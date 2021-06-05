@@ -1,4 +1,7 @@
 exports.guessnumber = function (req, res, vals) {
+  let hidden = parseInt(vals.get("quiznumber"));
+  let youranswer = parseInt(vals.get("youranswer"));
+  console.log(hidden);
   const nums = {
     pi: [3, 1, 4, 1, 5],
     fib: [1, 1, 2, 3, 5],
@@ -6,11 +9,19 @@ exports.guessnumber = function (req, res, vals) {
     pr: [2, 3, 5, 7, 11],
     pow: [1, 2, 4, 8, 16],
   };
-  let hidden = vals.get("quiznumber");
-  console.log(hidden);
   const answer = [9, 8, 36, 13, 32];
   let quiznumber = 0;
-  let score = 0;
+  var score = 0;
+  if (!hidden) {
+    displayQuestion(req, res, nums.pi);
+  } else {
+    if (hidden == 0 && youranswer == answer[0]) {
+      score++;
+      displayQuestion(req, res, nums.fib);
+    }
+  }
+};
+function displayQuestion(list) {
   res.writeHead(200, { "Content-Type": "text/html" });
   res.write("<!DOCTYPE html>");
   res.write("<html>");
@@ -27,7 +38,7 @@ exports.guessnumber = function (req, res, vals) {
   res.write("</p>");
   res.write("<p>Guess the next number in the sequence.</p>");
   res.write("<p>");
-  res.write(String(nums.pi));
+  res.write(String(list));
   res.write("</p>");
   res.write("<label>your answer:</label>");
   res.write('<input type="text" name="youranswer"/>');
@@ -42,8 +53,7 @@ exports.guessnumber = function (req, res, vals) {
   res.write("</body>");
   res.write("</html>");
   return res.end();
-};
-
+}
 //Write a node.js web application that
 // presents a series of quiz questions.
 // Each question displays a sequence of numbers and asks the participant to guess the next number of the
